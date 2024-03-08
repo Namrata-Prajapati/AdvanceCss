@@ -1,0 +1,25 @@
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    animation: 10s abc infinite;
+    animation-delay: 2s;
+}
+/* giving animation using keyframes */
+/* 50% or percentage is basically time span when the animation will be happening */
+/* if want it to not to stop give infinite in animation */
+@keyframes abc{
+    20%{ 
+        margin-left: 500px;
+        background-color: red;
+    }
+    50%{
+        margin-left: 500px;
+        background-color: black;
+        transform: rotate(30deg);
+    }
+    100%{
+        background-color: green;
+    }
+}
+

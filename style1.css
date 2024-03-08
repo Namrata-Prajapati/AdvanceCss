@@ -1,0 +1,42 @@
+.container p:first-child{
+    color:red;
+}
+
+.container p:last-child{
+    /* text-align: center; */
+    color: green;
+}
+
+/* for the nth child to be styled */
+.container p:nth-child(2){
+    color: blue;
+}
+
+/* to give css to odd children */
+.container p:nth-child(odd){
+    font-weight: bold;
+}
+
+/* to give css to even children */
+.container p:nth-child(2n){
+    font-size: 30px;
+}
+
+p::before{
+    content: "Hello";
+    background-color: aqua;
+    display: block;
+
+}
+
+p::after{
+    content: "!!";
+    background-color: chartreuse;
+    display: block;
+}
+
+
+
+
+
+
